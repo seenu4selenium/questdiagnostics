@@ -36,7 +36,7 @@ public class TS_001_QDsignin extends CommonFunctions {
 		
 		clickByAnyLocator(loc.HomePage_LogIn_Link);
 		clickByAnyLocator(loc.HomePage_MyQuestPatientsLogin);
-		switchToNewTab();
+		switchToNewTab(1);
 		
 		clickUsingJavaScript(loc.HomePage_AcceptCookies);
 		

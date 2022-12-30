@@ -272,11 +272,11 @@ public class CommonFunctions {
 	}
 
 	/*********** SwithchToWindow using Tab ***************************/
-	public void switchToNewTab() {
+	public void switchToNewTab(int Index) {
 		// Get the current window handle
 		String windowHandle = driver.getWindowHandle();
 		ArrayList<String> allTabs = new ArrayList<String>(driver.getWindowHandles());
-		driver.switchTo().window(allTabs.get(1));
+		driver.switchTo().window(allTabs.get(Index));
 
 		// Switch back to original window
 		// driver.switchTo().window(windowHandle);
